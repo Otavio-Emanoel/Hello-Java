@@ -49,7 +49,10 @@ class MapScreen extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.deepPurple,
         elevation: 0,
-        title: const Text('HelloJava', style: TextStyle(fontWeight: FontWeight.bold)),
+        title: const Text(
+          'HelloJava',
+          style: TextStyle(fontWeight: FontWeight.bold),
+        ),
       ),
       body: Container(
         decoration: const BoxDecoration(
@@ -88,9 +91,19 @@ class MapScreen extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text('Seção 1', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 20)),
+                        Text(
+                          'Seção 1',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 20,
+                          ),
+                        ),
                         SizedBox(height: 4),
-                        Text('Aprenda Java Básico', style: TextStyle(color: Colors.white70, fontSize: 15)),
+                        Text(
+                          'Aprenda Java Básico',
+                          style: TextStyle(color: Colors.white70, fontSize: 15),
+                        ),
                       ],
                     ),
                   ),
@@ -220,8 +233,7 @@ class _RoadPainter extends CustomPainter {
       ..strokeWidth = 8
       ..strokeCap = StrokeCap.round;
 
-    final path = Path()
-      ..moveTo(positions.first.dx, positions.first.dy);
+    final path = Path()..moveTo(positions.first.dx, positions.first.dy);
     for (int i = 0; i < positions.length - 1; i++) {
       final p1 = positions[i];
       final p2 = positions[i + 1];
@@ -253,7 +265,9 @@ class _PhaseIcon extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final Color borderColor = locked ? Colors.grey : color;
-    final Color fillColor = locked ? Colors.grey[200]! : color.withOpacity(0.15);
+    final Color fillColor = locked
+        ? Colors.grey[200]!
+        : color.withOpacity(0.15);
     final Color iconColor = locked ? Colors.grey : color;
 
     return AnimatedContainer(

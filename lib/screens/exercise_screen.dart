@@ -6,7 +6,12 @@ class ExerciseScreen extends StatefulWidget {
   final int exerciseIndex;
   final IconData? heroIcon;
   final Color? heroColor;
-  const ExerciseScreen({super.key, required this.exerciseIndex, this.heroIcon, this.heroColor});
+  const ExerciseScreen({
+    super.key,
+    required this.exerciseIndex,
+    this.heroIcon,
+    this.heroColor,
+  });
 
   @override
   State<ExerciseScreen> createState() => _ExerciseScreenState();
@@ -58,7 +63,9 @@ class _ExerciseScreenState extends State<ExerciseScreen> {
       showDialog(
         context: context,
         builder: (_) => AlertDialog(
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(16),
+          ),
           title: const Text('Parabéns!'),
           content: Text('Você acertou $score de ${questions.length} questões.'),
           actions: [
@@ -236,7 +243,10 @@ class _ExerciseScreenState extends State<ExerciseScreen> {
                                     Expanded(
                                       child: Text(
                                         q["options"][j],
-                                        style: TextStyle(fontSize: 16, color: text),
+                                        style: TextStyle(
+                                          fontSize: 16,
+                                          color: text,
+                                        ),
                                       ),
                                     ),
                                   ],
@@ -259,9 +269,9 @@ class _ExerciseScreenState extends State<ExerciseScreen> {
                 TextButton(
                   onPressed: currentQuestion > 0
                       ? () => setState(() {
-                            currentQuestion--;
-                            selectedIndex = -1;
-                          })
+                          currentQuestion--;
+                          selectedIndex = -1;
+                        })
                       : null,
                   child: const Text('Anterior'),
                 ),
@@ -272,14 +282,23 @@ class _ExerciseScreenState extends State<ExerciseScreen> {
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.deepPurple,
                     foregroundColor: Colors.white,
-                    padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 12),
-                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 18,
+                      vertical: 12,
+                    ),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(12),
+                    ),
                   ),
                   icon: Icon(
-                    currentQuestion < questions.length - 1 ? Icons.arrow_forward : Icons.flag,
+                    currentQuestion < questions.length - 1
+                        ? Icons.arrow_forward
+                        : Icons.flag,
                   ),
                   label: Text(
-                    currentQuestion < questions.length - 1 ? 'Próxima' : 'Finalizar',
+                    currentQuestion < questions.length - 1
+                        ? 'Próxima'
+                        : 'Finalizar',
                   ),
                 ),
               ],
