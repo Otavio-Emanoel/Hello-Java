@@ -1,0 +1,142 @@
+[
+  {
+    "exercise": 1,
+    "title": "Introdução ao Java",
+    "questions": [
+      {"question": "O que é Java?", "options": ["Linguagem de programação", "Sistema operacional", "Banco de dados", "Framework"], "answer": 0},
+      {"question": "Qual extensão de arquivo para código Java?", "options": [".java", ".jav", ".js", ".class"], "answer": 0},
+      {"question": "Quem criou o Java?", "options": ["James Gosling", "Bill Gates", "Linus Torvalds", "Guido van Rossum"], "answer": 0},
+      {"question": "Em que ano o Java foi lançado?", "options": ["1995", "2000", "1985", "2010"], "answer": 0},
+      {"question": "Java é fortemente tipado?", "options": ["Sim", "Não"], "answer": 0},
+      {"question": "Qual comando compila um arquivo Java?", "options": ["javac", "java", "compile", "run"], "answer": 0},
+      {"question": "Qual comando executa um programa Java?", "options": ["java", "javac", "run", "exec"], "answer": 0},
+      {"question": "Java é orientado a objetos?", "options": ["Sim", "Não"], "answer": 0}
+    ]
+  },
+  {
+    "exercise": 2,
+    "title": "Sintaxe Básica",
+    "questions": [
+      {"question": "Como se declara uma variável inteira?", "options": ["int x;", "integer x;", "x = int;", "var x;"], "answer": 0},
+      {"question": "Como imprimir na tela?", "options": ["System.out.println()", "print()", "echo()", "console.log()"], "answer": 0},
+      {"question": "Qual palavra-chave para definir uma classe?", "options": ["class", "object", "struct", "define"], "answer": 0},
+      {"question": "Como se inicia o método principal?", "options": ["public static void main(String[] args)", "main()", "start()", "run()"], "answer": 0},
+      {"question": "Qual símbolo para comentários de linha?", "options": ["//", "#", "--", "/* */"], "answer": 0},
+      {"question": "Como declarar uma variável String?", "options": ["String nome;", "str nome;", "text nome;", "nome = string;"], "answer": 0},
+      {"question": "Como finalizar uma instrução?", "options": [";", ".", ":", ","], "answer": 0},
+      {"question": "Qual palavra-chave para herança?", "options": ["extends", "inherits", "super", "base"], "answer": 0}
+    ]
+  },
+  {
+    "exercise": 3,
+    "title": "Tipos de Dados",
+    "questions": [
+      {"question": "Qual tipo para números decimais?", "options": ["double", "int", "char", "boolean"], "answer": 0},
+      {"question": "Qual tipo para verdadeiro/falso?", "options": ["boolean", "bool", "int", "float"], "answer": 0},
+      {"question": "Qual tipo para caracteres?", "options": ["char", "String", "int", "byte"], "answer": 0},
+      {"question": "Qual tipo para texto?", "options": ["String", "char", "text", "str"], "answer": 0},
+      {"question": "Qual tipo para números inteiros?", "options": ["int", "float", "double", "long"], "answer": 0},
+      {"question": "Qual tipo para números grandes?", "options": ["long", "int", "short", "byte"], "answer": 0},
+      {"question": "Qual tipo para valores pequenos?", "options": ["byte", "short", "int", "long"], "answer": 0},
+      {"question": "Qual tipo para números de precisão simples?", "options": ["float", "double", "int", "long"], "answer": 0}
+    ]
+  },
+  {
+    "exercise": 4,
+    "title": "Operadores",
+    "questions": [
+      {"question": "Qual operador de soma?", "options": ["+", "-", "*", "/"], "answer": 0},
+      {"question": "Qual operador de subtração?", "options": ["-", "+", "*", "/"], "answer": 0},
+      {"question": "Qual operador de multiplicação?", "options": ["*", "+", "-", "/"], "answer": 0},
+      {"question": "Qual operador de divisão?", "options": ["/", "*", "+", "-"], "answer": 0},
+      {"question": "Qual operador de resto?", "options": ["%", "/", "*", "-"], "answer": 0},
+      {"question": "Qual operador de igualdade?", "options": ["==", "=", "!=", "<="], "answer": 0},
+      {"question": "Qual operador de diferente?", "options": ["!=", "==", "=", "<"], "answer": 0},
+      {"question": "Qual operador lógico E?", "options": ["&&", "||", "!", "&"], "answer": 0}
+    ]
+  },
+  {
+    "exercise": 5,
+    "title": "Estruturas de Controle",
+    "questions": [
+      {"question": "Qual estrutura para decisão?", "options": ["if", "for", "while", "switch"], "answer": 0},
+      {"question": "Qual estrutura para repetição?", "options": ["for", "if", "switch", "case"], "answer": 0},
+      {"question": "Qual estrutura para múltiplas escolhas?", "options": ["switch", "if", "for", "while"], "answer": 0},
+      {"question": "Como se faz um laço infinito?", "options": ["while(true)", "for(;;)", "if(true)", "do{}while(true)"], "answer": 0},
+      {"question": "Qual palavra para sair de um laço?", "options": ["break", "continue", "exit", "stop"], "answer": 0},
+      {"question": "Qual palavra para pular uma iteração?", "options": ["continue", "break", "skip", "next"], "answer": 0},
+      {"question": "Qual estrutura para executar pelo menos uma vez?", "options": ["do-while", "while", "for", "if"], "answer": 0},
+      {"question": "Qual estrutura para verificar várias condições?", "options": ["if-else if-else", "switch", "for", "while"], "answer": 0}
+    ]
+  },
+  {
+    "exercise": 6,
+    "title": "Métodos e Funções",
+    "questions": [
+      {"question": "Como se define um método?", "options": ["void nome() {}", "method nome() {}", "function nome() {}", "def nome() {}"], "answer": 0},
+      {"question": "Como passar parâmetros?", "options": ["(int x, int y)", "[x, y]", "{x, y}", "<x, y>"], "answer": 0},
+      {"question": "Como retornar um valor?", "options": ["return valor;", "send valor;", "output valor;", "give valor;"], "answer": 0},
+      {"question": "Qual palavra para método sem retorno?", "options": ["void", "null", "empty", "none"], "answer": 0},
+      {"question": "Como chamar um método?", "options": ["nome();", "call nome;", "run nome;", "do nome;"], "answer": 0},
+      {"question": "Como definir método estático?", "options": ["static", "final", "const", "abstract"], "answer": 0},
+      {"question": "Como definir método privado?", "options": ["private", "protected", "public", "internal"], "answer": 0},
+      {"question": "Como definir método público?", "options": ["public", "private", "protected", "internal"], "answer": 0}
+    ]
+  },
+  {
+    "exercise": 7,
+    "title": "Classes e Objetos",
+    "questions": [
+      {"question": "Como criar um objeto?", "options": ["new Classe()", "create Classe()", "Classe.new()", "Classe()"], "answer": 0},
+      {"question": "Como definir um construtor?", "options": ["Classe() {}", "constructor Classe() {}", "new Classe() {}", "init Classe() {}"], "answer": 0},
+      {"question": "Como acessar atributo de objeto?", "options": ["obj.atributo", "obj->atributo", "obj:atributo", "obj[atributo]"], "answer": 0},
+      {"question": "Como chamar método de objeto?", "options": ["obj.metodo()", "obj->metodo()", "obj:metodo()", "obj[metodo()]"], "answer": 0},
+      {"question": "Como definir atributo privado?", "options": ["private", "public", "protected", "internal"], "answer": 0},
+      {"question": "Como definir atributo público?", "options": ["public", "private", "protected", "internal"], "answer": 0},
+      {"question": "Como herdar de uma classe?", "options": ["extends", "inherits", "super", "base"], "answer": 0},
+      {"question": "Como sobrescrever método?", "options": ["@Override", "@Overload", "@Super", "@Extend"], "answer": 0}
+    ]
+  },
+  {
+    "exercise": 8,
+    "title": "Arrays e Coleções",
+    "questions": [
+      {"question": "Como declarar um array?", "options": ["int[] arr;", "array int arr;", "arr = int[];", "int arr[];"], "answer": 0},
+      {"question": "Como acessar elemento do array?", "options": ["arr[0]", "arr(0)", "arr{0}", "arr<0>"], "answer": 0},
+      {"question": "Como obter tamanho do array?", "options": ["arr.length", "arr.size()", "arr.count", "arr.getLength()"], "answer": 0},
+      {"question": "Como percorrer array?", "options": ["for", "while", "if", "switch"], "answer": 0},
+      {"question": "Como declarar ArrayList?", "options": ["ArrayList<String> lista = new ArrayList<>();", "List<String> lista = new ArrayList<>();", "ArrayList lista = new ArrayList();", "new ArrayList<String>();"], "answer": 0},
+      {"question": "Como adicionar elemento em ArrayList?", "options": ["lista.add(valor);", "lista.push(valor);", "lista.append(valor);", "lista.insert(valor);"], "answer": 0},
+      {"question": "Como remover elemento de ArrayList?", "options": ["lista.remove(valor);", "lista.delete(valor);", "lista.pop(valor);", "lista.erase(valor);"], "answer": 0},
+      {"question": "Como limpar ArrayList?", "options": ["lista.clear();", "lista.empty();", "lista.removeAll();", "lista.reset();"], "answer": 0}
+    ]
+  },
+  {
+    "exercise": 9,
+    "title": "Tratamento de Erros",
+    "questions": [
+      {"question": "Como tratar exceções?", "options": ["try-catch", "if-else", "switch", "for"], "answer": 0},
+      {"question": "Como lançar exceção?", "options": ["throw", "raise", "error", "exception"], "answer": 0},
+      {"question": "Como garantir execução final?", "options": ["finally", "end", "lastly", "finish"], "answer": 0},
+      {"question": "Como capturar exceção específica?", "options": ["catch(Exception e)", "catch e", "on Exception", "handle Exception"], "answer": 0},
+      {"question": "Como tratar múltiplas exceções?", "options": ["vários catch", "vários try", "vários throw", "vários error"], "answer": 0},
+      {"question": "Como obter mensagem de erro?", "options": ["e.getMessage()", "e.message", "e.error", "e.text"], "answer": 0},
+      {"question": "Como ignorar exceção?", "options": ["catch vazio", "try vazio", "throw vazio", "error vazio"], "answer": 0},
+      {"question": "Como tratar exceção de array?", "options": ["ArrayIndexOutOfBoundsException", "NullPointerException", "IOException", "ClassNotFoundException"], "answer": 0}
+    ]
+  },
+  {
+    "exercise": 10,
+    "title": "Entrada e Saída",
+    "questions": [
+      {"question": "Como ler entrada do usuário?", "options": ["Scanner", "InputStream", "BufferedReader", "System.in.read()"], "answer": 0},
+      {"question": "Como criar Scanner?", "options": ["new Scanner(System.in)", "Scanner.create()", "Scanner.open()", "Scanner.read()"], "answer": 0},
+      {"question": "Como ler uma linha?", "options": ["scanner.nextLine()", "scanner.readLine()", "scanner.getLine()", "scanner.input()"], "answer": 0},
+      {"question": "Como ler inteiro?", "options": ["scanner.nextInt()", "scanner.readInt()", "scanner.getInt()", "scanner.inputInt()"], "answer": 0},
+      {"question": "Como imprimir na tela?", "options": ["System.out.println()", "print()", "echo()", "console.log()"], "answer": 0},
+      {"question": "Como fechar Scanner?", "options": ["scanner.close()", "scanner.end()", "scanner.stop()", "scanner.finish()"], "answer": 0},
+      {"question": "Como ler arquivo?", "options": ["FileReader", "Scanner", "InputStream", "BufferedReader"], "answer": 0},
+      {"question": "Como escrever em arquivo?", "options": ["FileWriter", "Scanner", "OutputStream", "BufferedWriter"], "answer": 0}
+    ]
+  }
+]

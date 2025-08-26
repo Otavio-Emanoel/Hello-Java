@@ -15,11 +15,6 @@ dependencies:
     sdk: flutter
     # uses-material-design: true
 
-  cupertino_icons: ^1.0.8
-
-dev_dependencies:
-  flutter_test:
-    sdk: flutter
   flutter_launcher_icons: ^0.13.1
 
   flutter_lints: ^5.0.0
@@ -29,6 +24,7 @@ flutter:
   uses-material-design: true
   assets:
     - assets/icon.png
+    - assets/section-1-questions.json
 
 
 flutter_icons:
