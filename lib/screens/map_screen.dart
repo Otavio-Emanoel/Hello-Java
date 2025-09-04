@@ -3,6 +3,9 @@ import 'exercise_screen.dart';
 import 'dart:ui' show ImageFilter;
 import 'dart:convert';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'content_screen.dart';
+import 'profile_screen.dart';
+import 'chat_screen.dart';
 
 class MapScreen extends StatefulWidget {
   const MapScreen({super.key});
@@ -249,11 +252,33 @@ class _MapScreenState extends State<MapScreen> {
           ),
         ],
       ),
+      floatingActionButton: FloatingActionButton.extended(
+        onPressed: () {
+          Navigator.of(
+            context,
+          ).push(MaterialPageRoute(builder: (_) => const ChatScreen()));
+        },
+        backgroundColor: Colors.deepPurpleAccent,
+        icon: const Icon(Icons.chat_bubble_outline),
+        label: const Text('Chat'),
+      ),
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: const Color(0xFF121225),
         type: BottomNavigationBarType.fixed,
         selectedItemColor: Colors.deepPurpleAccent,
         unselectedItemColor: Colors.white70,
+        currentIndex: 0,
+        onTap: (i) {
+          if (i == 2) {
+            Navigator.of(
+              context,
+            ).push(MaterialPageRoute(builder: (_) => const ContentScreen()));
+          } else if (i == 4) {
+            Navigator.of(
+              context,
+            ).push(MaterialPageRoute(builder: (_) => const ProfileScreen()));
+          }
+        },
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: ''),
           BottomNavigationBarItem(icon: Icon(Icons.star), label: ''),

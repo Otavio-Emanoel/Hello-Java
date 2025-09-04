@@ -21,12 +21,20 @@ dependencies:
 
   shared_preferences: ^2.3.2
 
+  flutter_markdown: ^0.7.4+2
+
+  google_generative_ai: ^0.4.6
+
+  flutter_dotenv: ^5.1.0
+
 
 flutter:
   uses-material-design: true
   assets:
+    - .env
     - assets/icon.png
     - assets/section-1-questions.json
+    - assets/content/
 
 
 flutter_icons:
