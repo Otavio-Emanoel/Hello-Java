@@ -3,6 +3,7 @@ import 'screens/splash_screen.dart';
 import 'screens/map_screen.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(const MyApp());
 }
 
